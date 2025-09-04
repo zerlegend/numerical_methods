@@ -489,3 +489,45 @@ tr:hover {
     padding: 8px 6px;
   }
 }
+
+/* Project Grading Rubric Table Styles */
+.grading-rubric-table {
+  min-width: 600px;
+}
+
+.grading-rubric-table th:nth-child(1),
+.grading-rubric-table td:nth-child(1) {
+  width: 25%;
+  min-width: 120px;
+}
+
+.grading-rubric-table th:nth-child(2),
+.grading-rubric-table td:nth-child(2) {
+  width: 35%;
+  min-width: 150px;
+}
+
+.grading-rubric-table th:nth-child(3),
+.grading-rubric-table td:nth-child(3) {
+  width: 15%;
+  min-width: 80px;
+  text-align: center;
+}
+
+.grading-rubric-table th:nth-child(4),
+.grading-rubric-table td:nth-child(4) {
+  width: 25%;
+  min-width: 150px;
+}
+
+/* Mobile optimization for grading rubric */
+@media (max-width: 480px) {
+  .grading-rubric-table {
+    font-size: 0.78em;
+  }
+
+  .grading-rubric-table th,
+  .grading-rubric-table td {
+    padding: 8px 5px;
+  }
+}

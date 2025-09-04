@@ -50,3 +50,16 @@ function showContent(contentId) {
 document.addEventListener("DOMContentLoaded", function () {
   showContent("description");
 });
+
+// Add a class to body for mobile detection
+function detectMobile() {
+  if (window.innerWidth <= 768) {
+    document.body.classList.add("mobile-device");
+  } else {
+    document.body.classList.remove("mobile-device");
+  }
+}
+
+// Run on load and resize
+window.addEventListener("load", detectMobile);
+window.addEventListener("resize", detectMobile);

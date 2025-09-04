@@ -456,7 +456,7 @@ tr:hover {
 
 /* Project Timeline Table Specific Styles */
 .project-timeline-table {
-  min-width: 500px; /* Smaller minimum width than main schedule */
+  min-width: 500px;
 }
 
 .project-timeline-table th:nth-child(1),
@@ -476,18 +476,6 @@ tr:hover {
   width: 30%;
   min-width: 100px;
   text-align: center;
-}
-
-/* Mobile optimization for project timeline */
-@media (max-width: 480px) {
-  .project-timeline-table {
-    font-size: 0.8em;
-  }
-
-  .project-timeline-table th,
-  .project-timeline-table td {
-    padding: 8px 6px;
-  }
 }
 
 /* Project Grading Rubric Table Styles */
@@ -520,14 +508,17 @@ tr:hover {
   min-width: 150px;
 }
 
-/* Mobile optimization for grading rubric */
+/* Mobile optimization for tables */
 @media (max-width: 480px) {
+  .project-timeline-table,
   .grading-rubric-table {
-    font-size: 0.78em;
+    font-size: 0.8em;
   }
 
+  .project-timeline-table th,
+  .project-timeline-table td,
   .grading-rubric-table th,
   .grading-rubric-table td {
-    padding: 8px 5px;
+    padding: 8px 6px;
   }
 }
